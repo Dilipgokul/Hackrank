@@ -13,16 +13,16 @@ def wrap(string, max_width):
                 m+=max_width
             else:
                 print(s[l:last])
-        # for i in s[l:m]:
-        #     if i!="$":
-        #         print(i,end="")
-        #     else:
-        #         break
-        # print("123456"+s[l:m-1])
+        
             
             
 
 if __name__ == '__main__':
     string, max_width = input(), int(input())
     wrap(string, max_width)
-    
+
+'''
+this is the alternative
+def wrap(string, max_width):
+    return "\n".join([string[i:i+max_width] for i in range(0, len(string), max_width)])
+    '''
