@@ -37,21 +37,26 @@ for i in range(N-1, -N, -1):
         row[2*(N-1-j)] = alphabet[abs(i)+j]
     print("".join(row))
     """
-import string
+# import string
 
-size = int(input())
-alphabet = string.ascii_lowercase
+# size = int(input())
+# alphabet = string.ascii_lowercase
 
-for i in range(size - 1, 0, -1):
-    row = ["-"] * (size * 2 - 1)
-    for j in range(0, size - i):
-        row[size - 1 - j] = alphabet[j + i]
-        row[size - 1 + j] = alphabet[j + i]
-    print("-".join(row))
+# for i in range(size - 1, 0, -1):
+#     row = ["-"] * (size * 2 - 1)
+#     for j in range(0, size - i):
+#         row[size - 1 - j] = alphabet[j + i]
+#         row[size - 1 + j] = alphabet[j + i]
+#     print("-".join(row))
 
-for i in range(0, size):
-    row = ["-"] * (size * 2 - 1)
-    for j in range(0, size - i):
-        row[size - 1 - j] = alphabet[j + i]
-        row[size - 1 + j] = alphabet[j + i]
-    print("-".join(row))
+# for i in range(0, size):
+#     row = ["-"] * (size * 2 - 1)
+#     for j in range(0, size - i):
+#         row[size - 1 - j] = alphabet[j + i]
+#         row[size - 1 + j] = alphabet[j + i]
+#     print("-".join(row))
+   
+
+def solve(s):
+    s = s.split(" ")
+    return(" ".join(i.capitalize() for i in s))
